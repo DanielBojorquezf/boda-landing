@@ -41,7 +41,8 @@ const crearCodigoConfirmacionHTML = () => {
     let codigoHTML = `<div
     class="inv-card col-lg-4 col-md-5 col-sm-8 col-10 p-3 mx-auto flex-column justify-content-start"
   >
-    <div class="card-head">Confirmacion</div>
+
+    <h2 class="card-head">Confirmacion</h2>
     <p class="mt-3">
       INGRESA TU NOMBRE O CÓDIGO DE INVITADO Y DA CLIC EN BUSCAR
     </p>
@@ -61,7 +62,7 @@ const crearCodigoConfirmacionHTML = () => {
     let codigoHTML = `<div
     class="inv-card col-lg-4 col-md-5 col-sm-8 col-10 mx-auto position-relative flex-column justify-content-start"
   >
-    <div class="card-head">INVITACIÓN</div>
+    <h2 class="card-head">INVITACIÓN</h2>
     <p class="mt-3">LA PÁGINA WEB DE TU BODA</p>
     <p class="mt-3">
       ¡Hola, te invitamos a nuestra boda! Esperamos puedas asistir.
@@ -93,7 +94,7 @@ const crearCodigoConfirmacionHTML = () => {
     let codigoHTML = `<div
     class="inv-card col-lg-4 col-md-5 col-sm-8 col-10 mx-auto position-relative flex-column justify-content-start"
   >
-    <div class="card-head">CONFIRMACION DE INVITADOS</div>
+    <h2 class="card-head">CONFIRMACION DE INVITADOS</h2>
     <p class="mt-3">
       Selecciona la casilla a lado del nombre de los invitados que
       desees confirmar
