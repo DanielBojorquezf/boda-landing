@@ -5,135 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+    <script src="js/jquery.min.js"></script>
     <link
       rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <script src="js/jquery.min.js"></script>
-    <script src="C:\Users\Juan\Desktop\Proj Boda\boda-landing\node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
-    <title>Daniel & Daniela - El Dia Final</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Daniela & Daniel - El Dia Final</title>
   </head>
   <body onload="cargarFormulario()">
-    <div class="container-fluid">
+    <div class="container-fluid" id="main">
       <div class="row">
-        <div id="portada"><h1>Daniela & Daniel</h1></div>
+        <div id="portada">
+          <h1>Daniela & Daniel</h1>
+          <h3>Nos casamos el 27 de enero de 2023</h3>
+        </div>
       </div>
 
-      <div class="row">
+      <div id="remaining-time">
         <h3>Un poco menos para ese "algún día"</h3>
         <div id="cuenta">
-        <script src="./simplyCountdown.min.js"></script>
+          
         </div>
-        <script src="./index.js"></script>
-        <div width="30%">
+        <div class="time-logo">
           <img class="img-responsive" src="./img/countdown.png" alt="" />
+          <!-- test -->
         </div>
       </div>
 
-      <div class="row">
-        <div>
-          <iframe
-            class="col-12 w-100"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3487.7864983174627!2d-110.9903401!3d29.0528954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce848684c0d1fd%3A0x906b7921c982ba2e!2sSalon%20Las%20Cascadas!5e0!3m2!1ses!2smx!4v1663378376532!5m2!1ses!2smx"
-            width="1000"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <div class="itinerario col-sm-12">
-            <h5 class="margin">Ceremonia: 8:30pm</h5>
-            <h5 class="">Recepción: 9:00pm - 2:00am</h5>
-            <h5 class="">Salón Las Cascadas</h5>
-            <h5 class="margin2">
-              Los Molinos 97, Las Minitas, 83285 Hermosillo, Son.
-            </h5>
-            <a class="" href="https://goo.gl/maps/KgcjNgpjzCxkC1b37"
-              >Ver En Mapa</a
-            >
-          </div>
-        </div>
+      <div class="itinerario">
+        <h3 class="title">
+          Horarios
+          <i class="fa-regular fa-clock ms-2"></i>
+        </h3>
+        <h5>Ceremonia: 8:30pm</h5>
+        <h5>Recepción: 9:00pm - 2:00am</h5>
+        <hr class="w-100 mt-4">
+        <h3 class="title"">
+          Ubicación
+          <i class="fa-regular fa-map ms-2"></i>
+        </h5>
+        <h5>Salón Las Cascadas</h5>
+        <p class="subtitle">
+          Los Molinos 97, Las Minitas, 83285 Hermosillo, Son.
+        </p>
+        <!-- <img src="img/mapa.png" alt="mapa"> -->
+        <!-- <a class="" href="https://goo.gl/maps/KgcjNgpjzCxkC1b37"
+          >Ver En Mapa</a
+        > -->
+        <iframe
+          class="col-12 w-100"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3487.7864983174627!2d-110.9903401!3d29.0528954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce848684c0d1fd%3A0x906b7921c982ba2e!2sSalon%20Las%20Cascadas!5e0!3m2!1ses!2smx!4v1663378376532!5m2!1ses!2smx"
+          width="300"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
 
-      <div class="row">
-        <div class="dresscode-block mw-section">
-          <div class="row centered-content-block">
-            <h4 class="no-margin-bottom fourth-color-text sm-line-height">
-              Código de vestimenta
-            </h4>
-            <br />
-            <h3 class="third-color-text">Formal</h3>
+      <div class="row vestimenta mt-2">
+        <div class="col-12">
+          <h3 class="title">
+            Código de vestimenta
+          </h3>
+        </div>
+        <h5 class="third-color-text">Formal</h5>
+        <div class="col-6">
+          <img
+            src="./img/codigo-hombre.png"
+            width="100%"
+            height="100%"
+          />
+          <div class="details">
+            <p class="gender">Hombres</p>
+            <p class="detail">Traje</p>
+            <br>
           </div>
-          <div class="row">
-            <div
-              class="col-lg-3 col-md-4 col-sm-4 col-5 first-quarter desktop-only tablet-hidden"
-            >
-              <div class="content centered-content-inline">
-                <h1 class="main-color-text no-margin-bottom">
-                  H<br />
-                  O<br />
-                  M<br />
-                  B<br />
-                  R<br />
-                  E<br />
-                  S<br />
-                </h1>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-8 col-sm-8 col-7 second-quarter">
-              <div class="content">
-                <div class="centered-content-inline">
-                  <img
-                    src="./img/codigo-hombre.png"
-                    width="100%"
-                    height="100%"
-                  />
-                  <h5
-                    class="no-margin-bottom fourth-color-text sm-line-height desktop-hidden"
-                  >
-                    Hombres
-                  </h5>
-                  <p class="third-color-text no-margin-bottom">Smoking</p>
-                  <br class="desktop-hidden" />
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-8 col-sm-8 col-7 third-quarter">
-              <div class="content">
-                <div class="centered-content-inline">
-                  <img src="./img/codigo-mujer.png" width="100%" />
-                  <h5
-                    class="no-margin-bottom fourth-color-text sm-line-height desktop-hidden"
-                  >
-                    Mujeres
-                  </h5>
-                  <p class="third-color-text no-margin-bottom">Vestido Largo</p>
-                  <p class="third-color-text no-margin-bottom">
-                    No Blanco, No Nude
-                  </p>
-                  <br class="desktop-hidden" />
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-md-4 col-sm-4 col-5 last-quarter desktop-only tablet-hidden"
-            >
-              <div class="content centered-content-inline">
-                <h1 class="secondary-color-text no-margin-bottom">
-                  M<br />
-                  U<br />
-                  J<br />
-                  E<br />
-                  R<br />
-                  E<br />
-                  S<br />
-                </h1>
-              </div>
-            </div>
+        </div>
+        <div class="col-6">
+          <img
+            src="./img/codigo-mujer.png"
+            width="100%"
+            height="100%"
+          />
+          <div class="details">
+            <p class="gender">Mujer</p>
+            <p class="detail">Vestido</p>
+            <p class="note"> NO blanco / NO nude</p>
           </div>
+        </div>
+        <div class="col-12 mb-4">
+          <small>La vestimenta es recomendada</small>
         </div>
       </div>
 
@@ -212,14 +180,23 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="confirmacion">
-         
-
-        </div>
+    <div class="confirmacion row">
+      <div class="custom-card">
+        <div class="card-head">Confirmacion</div>
+        <p class="mt-3">
+          INGRESA TU NOMBRE O CÓDIGO DE INVITADO Y DA CLIC EN BUSCAR
+        </p>
+        <input type="text" id="inputCodigo"/>
+        <button class="mt-3" type="submit" id="boton1" onclick='cambioDeFormulario(2)'>BUSCAR</button>
+        <!-- <p class="mt-3">
+          Usa el nombre de rótulo La Página Web de Tu Boda o el código
+          LG8360 para probar nuestro formulario de confirmaciones
+        </p> -->
       </div>
     </div>
 
-    <script src="codigo.js"></script>
+    <script src="./simplyCountdown.min.js"></script>
+    <script src="./index.js"></script>
+    <!-- <script src="codigo.js"></script> -->
   </body>
 </html>

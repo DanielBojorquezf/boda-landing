@@ -14,10 +14,55 @@ body{
 #portada{
   height: 100vh;
   width: 200vh;
-  background: no-repeat url("./img/boda.jpg");
+  background: no-repeat url("./img/portada.jpg");
   background-size: 100% 100%;
   flex: auto;
 }
+
+#portada h1 {
+  font-family: 'Alex Brush';
+  margin-top: 25vh;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#main {
+  padding: 0px;
+}
+
+/* Start Time */ 
+#remaining-time {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 55px;
+  justify-content: space-evenly;
+}
+
+#cuenta {
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly !important;
+  color: #FF2F81 !important;
+}
+h3 {
+  font-family: Montserrat,sans-serif!important;
+}
+.simply-section {
+  width: auto !important;
+  margin: 0px !important;
+}
+
+.simply-amount {
+  font-size: 2rem!important;
+  line-height: 2.375rem!important;
+}
+.simply-word {
+  font-size: 1.25rem!important;
+  line-height: 2.375rem!important;
+}
+/* End Time */
 
 div{
   text-align: center;
@@ -60,10 +105,56 @@ div{
 .itinerario{
   background-color: #152f4c; 
   width: 100%;
-  height: 100%;
+  height: auto;
   margin-top: -55px;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
 }
+
+.title {
+  color: #D28A55;
+  margin-top: 30px;
+}
+
+.itinerario iframe {
+  width: 350px !important;
+  height: 350px !important;
+  margin-top: 20px;
+}
+
+.itinerario .ubicacion {
+  font-size: 15px;
+}
+
+/* Start Vestimenta */
+.details .gender {
+  font-weight: bold;
+}
+.details .note {
+  font-weight: bold;
+  font-size: small;
+  color: red;
+}
+/* End Vestimenta */
+
+/* Start Confirmacion */
+.confirmacion {
+  background-color: #152f4c;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 0px;
+  height: 50vh;
+  justify-content: space-evenly;
+  padding: 10%;
+}
+.confirmation .custom-card {
+  border: solid #FFF 2px;
+}
+/* End Confirmacion */
+
 
 .local{
   height: 85vh;
@@ -81,13 +172,6 @@ div{
 a{
   color: #d28a55 !important;
   font-weight: bolder;
-}
-
-.row{
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
 }
 
 .etiqueta{
@@ -183,18 +267,6 @@ h4{
   fill: #fff;
   height: 85px;
   width: 82px;
-}
-
-.confirmacion{
-  background: wheat;
-  max-height: 100vh;
-  width: 200vh;
-  background-size: 100% 100%;
-  display: flex;
-  align-items: center;
-  padding: 5%;
-  overflow-y: auto;
- 
 }
 
 .inv-card{
