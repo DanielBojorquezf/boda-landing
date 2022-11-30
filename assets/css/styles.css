@@ -1,4 +1,4 @@
-body{
+body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -6,28 +6,50 @@ body{
   font-style: italic;
   font-size: xx-large;
   padding: 0;
+  max-width: 450px;
+  background: #202023;
 }
-.h{
+
+.h {
   height: 60px;
 }
 
-#portada{
+#portada {
   height: 100vh;
-  width: 200vh;
-  background: no-repeat url("./img/portada.jpg");
+  width: 100vw;
+  background: no-repeat url("../img/portada.jpg");
   background-size: 100% 100%;
   flex: auto;
 }
 
 #portada h1 {
   font-family: 'Alex Brush';
-  margin-top: 25vh;
-  font-size: 50px;
+  padding-top: 5vh;
+  font-size: 3rem;
   font-weight: 600;
+  margin-bottom: 75vh;
+  /* #7A89A5
+#5D6988
+#5A6163
+#5C5337
+#EDEDED */
 }
 
-#main {
+#portada h3 {
+  font-family: 'Alex Brush';
+  color: #EDEDED;
+}
+
+#portada span {
+  color: #EDEDED;
+  padding: 0px 15px;
+  border-top: solid #EDEDED 1px;
+  border-bottom: solid #EDEDED 1px;
+}
+
+main {
   padding: 0px;
+  background-color: #FEFCFD;
 }
 
 /* Start Time */ 
@@ -44,7 +66,7 @@ body{
   padding: 0px;
   display: flex;
   justify-content: space-evenly !important;
-  color: #FF2F81 !important;
+  color: #5A6163 !important;
 }
 h3 {
   font-family: Montserrat,sans-serif!important;
@@ -103,7 +125,7 @@ div{
 }
 
 .itinerario{
-  background-color: #152f4c; 
+  background-color: #5A6163; 
   width: 100%;
   height: auto;
   margin-top: -55px;
@@ -129,29 +151,40 @@ div{
 }
 
 /* Start Vestimenta */
+.details {
+  height: 180px;
+}
+
 .details .gender {
   font-weight: bold;
 }
+
 .details .note {
   font-weight: bold;
   font-size: small;
   color: red;
 }
+
+.note {
+  font-size: 23px;
+  font-weight: 400;
+  text-decoration: underline;
+}
 /* End Vestimenta */
 
 /* Start Confirmacion */
 .confirmacion {
-  background-color: #152f4c;
+  background-color: #5A6163;
   color: #FFF;
-  display: flex;
-  flex-direction: column;
-  padding: 5vh 0px;
-  height: 50vh;
-  justify-content: space-evenly;
   padding: 10%;
 }
+
 .confirmacion .custom-card {
   border: solid #FFF 2px;
+}
+
+.confirmacion .card-body p {
+  font-size: 20px;
 }
 /* End Confirmacion */
 
@@ -231,7 +264,7 @@ h4{
 }
 
 .dresscode-block .first-quarter{
-  background-color: #152f4c;
+  background-color: #5A6163;
 }
 
 .dresscode-block .last-quarter{
@@ -245,7 +278,7 @@ h4{
 }
 
 .location-info-box{
-  background-color: #152f4c;
+  background-color: #5A6163;
   padding: 5%;
 }
 
