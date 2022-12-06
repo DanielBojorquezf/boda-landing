@@ -1,3 +1,8 @@
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   display: flex;
   flex-wrap: wrap;
@@ -10,6 +15,10 @@ body {
   background: #202023;
 }
 
+main {
+  background-color: #FFF;
+}
+
 .h {
   height: 60px;
 }
@@ -17,17 +26,42 @@ body {
 #portada {
   height: 100vh;
   width: 100vw;
-  background: no-repeat url("../img/portada.jpg");
-  background-size: 100% 100%;
+  background: no-repeat url("../img/portada2.jpeg");
+  background-position: -29vw -220px;
   flex: auto;
+  border: solid #FFF 2px;
+}
+
+#portada-bg {
+  background-color: #000000;
+  opacity: 0.5;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+#portada .names {
+  padding-top: 15vh;
+  margin-bottom: 55vh;
+  height: 20vh;
+}
+
+#portada #date {
+  font-family: serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 10px;
+  letter-spacing: 1.8vw;
+  color: #FFF;
 }
 
 #portada h1 {
   font-family: 'Alex Brush';
-  padding-top: 5vh;
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 75vh;
+  font-size: 5rem;
+  color: #FFF;
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 80px;
   /* #7A89A5
 #5D6988
 #5A6163
@@ -54,11 +88,16 @@ main {
 
 /* Start Time */ 
 #remaining-time {
-  height: 35vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   margin-bottom: 55px;
   justify-content: space-evenly;
+}
+
+#remaining-time h3 {
+  font-size: 1.4rem;
+  font-family: serif !important;
 }
 
 #cuenta {
@@ -66,11 +105,14 @@ main {
   padding: 0px;
   display: flex;
   justify-content: space-evenly !important;
-  color: #5A6163 !important;
+  color: #000 !important;
+  font-family: serif; !important;
 }
+
 h3 {
   font-family: Montserrat,sans-serif!important;
 }
+
 .simply-section {
   width: auto !important;
   margin: 0px !important;
@@ -125,19 +167,27 @@ div{
 }
 
 .itinerario{
-  background-color: #5A6163; 
+  background-color: #FFF;
+  font-family: serif !important;
   width: 100%;
   height: auto;
   margin-top: -55px;
-  color: #fff;
+  color: #000;
   display: flex;
   flex-direction: column;
   padding-bottom: 30px;
 }
 
 .title {
-  color: #D28A55;
+  color: #C5B358;
+  font-weight: bold;
   margin-top: 30px;
+}
+
+.subtitle {
+  font-family: serif !important;
+    font-size: 1.4rem;
+    margin-top: 20px;
 }
 
 .itinerario iframe {
@@ -152,7 +202,10 @@ div{
 
 /* Start Vestimenta */
 .details {
-  height: 180px;
+  height: 80px;
+  font-family: serif;
+  font-size: 1.7rem;
+  font-weight: 100;
 }
 
 .details .gender {
@@ -170,12 +223,23 @@ div{
   font-weight: 400;
   text-decoration: underline;
 }
+
+#recomendaciones, #regalos, .confirmacion p {
+  font-size: 1.4rem;
+  font-family: serif;
+  font-weight: 100;
+  text-align: center;
+}
+
+#recomendaciones p {
+  margin-bottom: 0px;
+}
 /* End Vestimenta */
 
 /* Start Confirmacion */
 .confirmacion {
-  background-color: #5A6163;
-  color: #FFF;
+  background-color: #FFF;
+  color: #000;
   padding: 10%;
 }
 
@@ -185,6 +249,20 @@ div{
 
 .confirmacion .card-body p {
   font-size: 20px;
+}
+
+#btn-submit {
+  margin: 0px !important;
+    width: 100%;
+    font-family: serif;
+    font-size: 1.4rem;
+    padding: 5px;
+    height: auto;
+    border-radius: 10%;
+    font-weight: 100;
+    border: solid #fff 1px;
+    background: #C5B358;
+    color: #FFF;
 }
 /* End Confirmacion */
 
@@ -238,7 +316,9 @@ a{
 }
 
 .third-color-text{
-  color: #727475;
+  color: #000;
+  font-family: serif;
+  font-size: 1.5rem;
 }
 
 h3{
@@ -321,9 +401,6 @@ a > img{
 }
 
 .card-head {
-  text-transform: uppercase;
-  font-size: 24px;
-  letter-spacing: 2px;
   padding-top: 10px;
 }
 
